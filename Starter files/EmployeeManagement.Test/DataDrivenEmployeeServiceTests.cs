@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EmployeeManagement.Business;
 using EmployeeManagement.Business.EventArguments;
 using EmployeeManagement.Business.Exceptions;
 using EmployeeManagement.DataAccess.Entities;
@@ -12,12 +11,12 @@ using EmployeeManagement.Test.Fixtures;
 namespace EmployeeManagement.Test
 {
     [Collection("EmployeeServiceCollection")]
-    public class EmployeeServiceTests
+    public class DataDrivenEmployeeServiceTests
     {
 
         private readonly EmployeeServiceFixture _employeeServiceFixture;
 
-        public EmployeeServiceTests(EmployeeServiceFixture employeeServiceFixture)
+        public DataDrivenEmployeeServiceTests(EmployeeServiceFixture employeeServiceFixture)
         {
             _employeeServiceFixture = employeeServiceFixture;
         }
@@ -121,3 +120,5 @@ namespace EmployeeManagement.Test
         }
     }
 }
+
+
