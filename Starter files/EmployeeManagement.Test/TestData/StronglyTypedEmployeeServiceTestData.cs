@@ -10,7 +10,8 @@ namespace EmployeeManagement.Test.TestData
     {
         public StronglyTypedEmployeeServiceTestData()
         {
-            Add(100, true)
+            Add(100, true);
+            Add(200, false);
         }
     }
 }
