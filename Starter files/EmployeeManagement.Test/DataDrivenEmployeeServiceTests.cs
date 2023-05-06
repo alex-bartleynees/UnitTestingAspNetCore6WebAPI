@@ -136,7 +136,7 @@ namespace EmployeeManagement.Test
         }
 
         [Theory]
-        [MemberData(nameof(ExampleTestDataForGiveRaise_WithMethod), 2)]
+        [MemberData(nameof(StronglyTypedExampleTestDataForGiveRaise_WithProperty), 2)]
         public async Task GiveRaise_RaiseGiven_EmployeeMinimumRaiseGivenMatchesValue(
             int raiseGiven, bool expectedValueForMinimumRaiseGiven)
         {
